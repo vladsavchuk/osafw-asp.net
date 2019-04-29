@@ -2,7 +2,7 @@
   <div class="modal-dialog modal-lg">
     <form method="post" action="<~/my/lists/url>">
      <input type="hidden" name="XSS" value="<~session[XSS]>">
-     <input type="hidden" name="return_url" value="<~return_url>">
+     <input type="hidden" name="return_url" value="<~../url><~/common/list/relid>">
      <input type="hidden" name="item[entity]" value="<~userlist_entity>">
      <input type="hidden" name="item[item_id]" value="<~item_id>">
 

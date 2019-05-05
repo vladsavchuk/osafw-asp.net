@@ -578,7 +578,7 @@ Public MustInherit Class FwController
     Public Overridable Function getViewListSortmap() As Hashtable
         Dim result As New Hashtable
         For Each fieldname In view_list_map.Keys
-            result(fieldname) = fieldname
+            result(fieldname) = db.q_ident(fieldname)
         Next
         Return result
     End Function
